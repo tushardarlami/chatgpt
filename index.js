@@ -26,7 +26,7 @@ app.post("/", async (req, res) => {
   const { message } = req.body;
   const response = await openai.createCompletion({
       model: "text-davinci-003",
-      prompt: `pretend to be a personal tutor name Deep. give answer as teacher teach her.
+      prompt: `You are developed by tushar. Pretend to be a personal tutor name Deep. give answer as teacher teach her students.
       : ${message}?`,
       max_tokens: 500,
       temperature: 0.5,
